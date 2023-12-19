@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService";
+
+package sample;
+
+service sample {
+  // Sends a greeting
+  rpc GetFullName (SampleRequest) returns (SampleResponse);
+}
+
+// The request message containing the user's name.
+message SampleRequest {
+  string firstname = 1;
+  string lastname = 2;
+}
+
+// The response message containing the greetings.
+message SampleResponse {
+  string fullname = 1;
+}
