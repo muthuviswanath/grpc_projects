@@ -25,20 +25,21 @@ namespace GrpcService {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChRQcm90b3MvcHJvZHVjdC5wcm90bxIHcHJvZHVjdBobZ29vZ2xlL3Byb3Rv",
-            "YnVmL2VtcHR5LnByb3RvIjcKC1Byb2R1Y3RMaXN0EigKCFByb2R1Y3RzGAEg",
-            "AygLMhYucHJvZHVjdC5Qcm9kdWN0c01vZGVsIlYKDVByb2R1Y3RzTW9kZWwS",
-            "EwoLUHJvZHVjdE5hbWUYASABKAkSGgoSUHJvZHVjdERlc2NyaXB0aW9uGAIg",
-            "ASgJEhQKDHByb2R1Y3RQcmljZRgDIAEoASI/ChNQcm9kdWN0U2F2ZVJlc3Bv",
-            "bnNlEhIKClN0YXR1c0NvZGUYASABKAUSFAoMSXNTdWNjZXNzZnVsGAIgASgI",
-            "MowBCgdQcm9kdWN0EkQKDHNhdmVQcm9kdWN0cxIWLnByb2R1Y3QuUHJvZHVj",
-            "dHNNb2RlbBocLnByb2R1Y3QuUHJvZHVjdFNhdmVSZXNwb25zZRI7CgtHZXRQ",
-            "cm9kdWN0cxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRoULnByb2R1Y3QuUHJv",
-            "ZHVjdExpc3RCDqoCC0dycGNTZXJ2aWNlYgZwcm90bzM="));
+            "YnVmL2VtcHR5LnByb3RvGh9nb29nbGUvcHJvdG9idWYvdGltZXN0YW1wLnBy",
+            "b3RvIjcKC1Byb2R1Y3RMaXN0EigKCFByb2R1Y3RzGAEgAygLMhYucHJvZHVj",
+            "dC5Qcm9kdWN0c01vZGVsImkKDVByb2R1Y3RzTW9kZWwSEwoLUHJvZHVjdE5h",
+            "bWUYASABKAkSGgoSUHJvZHVjdERlc2NyaXB0aW9uGAIgASgJEhQKDHByb2R1",
+            "Y3RQcmljZRgDIAEoARIRCglTdG9ja0RhdGUYBCABKAkiPwoTUHJvZHVjdFNh",
+            "dmVSZXNwb25zZRISCgpTdGF0dXNDb2RlGAEgASgFEhQKDElzU3VjY2Vzc2Z1",
+            "bBgCIAEoCDKMAQoHUHJvZHVjdBJECgxzYXZlUHJvZHVjdHMSFi5wcm9kdWN0",
+            "LlByb2R1Y3RzTW9kZWwaHC5wcm9kdWN0LlByb2R1Y3RTYXZlUmVzcG9uc2US",
+            "OwoLR2V0UHJvZHVjdHMSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaFC5wcm9k",
+            "dWN0LlByb2R1Y3RMaXN0Qg6qAgtHcnBjU2VydmljZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService.ProductList), global::GrpcService.ProductList.Parser, new[]{ "Products" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService.ProductsModel), global::GrpcService.ProductsModel.Parser, new[]{ "ProductName", "ProductDescription", "ProductPrice" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService.ProductsModel), global::GrpcService.ProductsModel.Parser, new[]{ "ProductName", "ProductDescription", "ProductPrice", "StockDate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService.ProductSaveResponse), global::GrpcService.ProductSaveResponse.Parser, new[]{ "StatusCode", "IsSuccessful" }, null, null, null, null)
           }));
     }
@@ -244,6 +245,7 @@ namespace GrpcService {
       productName_ = other.productName_;
       productDescription_ = other.productDescription_;
       productPrice_ = other.productPrice_;
+      stockDate_ = other.stockDate_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -285,6 +287,17 @@ namespace GrpcService {
       }
     }
 
+    /// <summary>Field number for the "StockDate" field.</summary>
+    public const int StockDateFieldNumber = 4;
+    private string stockDate_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string StockDate {
+      get { return stockDate_; }
+      set {
+        stockDate_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ProductsModel);
@@ -301,6 +314,7 @@ namespace GrpcService {
       if (ProductName != other.ProductName) return false;
       if (ProductDescription != other.ProductDescription) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ProductPrice, other.ProductPrice)) return false;
+      if (StockDate != other.StockDate) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -310,6 +324,7 @@ namespace GrpcService {
       if (ProductName.Length != 0) hash ^= ProductName.GetHashCode();
       if (ProductDescription.Length != 0) hash ^= ProductDescription.GetHashCode();
       if (ProductPrice != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ProductPrice);
+      if (StockDate.Length != 0) hash ^= StockDate.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -338,6 +353,10 @@ namespace GrpcService {
         output.WriteRawTag(25);
         output.WriteDouble(ProductPrice);
       }
+      if (StockDate.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(StockDate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -359,6 +378,10 @@ namespace GrpcService {
         output.WriteRawTag(25);
         output.WriteDouble(ProductPrice);
       }
+      if (StockDate.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(StockDate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -376,6 +399,9 @@ namespace GrpcService {
       }
       if (ProductPrice != 0D) {
         size += 1 + 8;
+      }
+      if (StockDate.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(StockDate);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -396,6 +422,9 @@ namespace GrpcService {
       }
       if (other.ProductPrice != 0D) {
         ProductPrice = other.ProductPrice;
+      }
+      if (other.StockDate.Length != 0) {
+        StockDate = other.StockDate;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -423,6 +452,10 @@ namespace GrpcService {
             ProductPrice = input.ReadDouble();
             break;
           }
+          case 34: {
+            StockDate = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -447,6 +480,10 @@ namespace GrpcService {
           }
           case 25: {
             ProductPrice = input.ReadDouble();
+            break;
+          }
+          case 34: {
+            StockDate = input.ReadString();
             break;
           }
         }

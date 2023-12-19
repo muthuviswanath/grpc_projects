@@ -19,3 +19,4 @@ D:\GRPC\UnaryDemo\ConsoleApp\obj\Debug\net6.0\refint\ConsoleApp.dll
 D:\GRPC\UnaryDemo\ConsoleApp\obj\Debug\net6.0\ConsoleApp.pdb
 D:\GRPC\UnaryDemo\ConsoleApp\obj\Debug\net6.0\ConsoleApp.genruntimeconfig.cache
 D:\GRPC\UnaryDemo\ConsoleApp\obj\Debug\net6.0\ref\ConsoleApp.dll
+D:\GRPC\UnaryDemo\ConsoleApp\obj\Debug\net6.0\ConsoleApp.sourcelink.json

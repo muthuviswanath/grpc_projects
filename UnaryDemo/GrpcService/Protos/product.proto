@@ -1,5 +1,6 @@
 syntax = "proto3";
 import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
 
 option csharp_namespace = "GrpcService";
 
@@ -20,6 +21,7 @@ message ProductsModel{
 string ProductName = 1;
 string ProductDescription = 2;
 double productPrice = 3;
+string StockDate = 4;
 }
 
 // The response message containing the greetings.

@@ -1,4 +1,5 @@
-﻿using Grpc.Net.Client;
+﻿using Google.Protobuf.WellKnownTypes;
+using Grpc.Net.Client;
 using GrpcService;
 
 namespace ConsoleApp
@@ -17,19 +18,21 @@ namespace ConsoleApp
 
             var result = client2.SayHello(new HelloRequest { Name = "Narendra Modi" });
             Console.WriteLine(result.Message);
-
+            var stockDate = new DateTime(2023,12,19);
             var prodresponse = await client3.saveProductsAsync(new ProductsModel
             {
                 ProductName = "Applie Iphone 15",
                 ProductDescription = "Latest IPhone",
-                ProductPrice = 2342343
-            });
+                ProductPrice = 2342343,
+                StockDate = stockDate.ToString("dd-MM-yyyy")
+            }) ;
 
             Console.WriteLine($"{prodresponse.StatusCode} | {prodresponse.IsSuccessful}");
 
             var prodlistresponse = await client3.GetProductsAsync(new Google.Protobuf.WellKnownTypes.Empty());
             foreach (var prod in prodlistresponse.Products) {
-                Console.WriteLine($"{prod.ProductName} | {prod.ProductDescription} | {prod.ProductPrice}");
+                var stockdate = prod.StockDate;
+                Console.WriteLine($"{prod.ProductName} | {prod.ProductDescription} | {prod.ProductPrice} | {stockdate}");
             }
             Console.ReadKey();
 

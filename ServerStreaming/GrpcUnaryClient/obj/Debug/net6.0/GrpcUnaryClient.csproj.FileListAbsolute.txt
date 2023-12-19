@@ -1,0 +1,15 @@
+D:\GRPC\ServerStreaming\GrpcUnaryClient\bin\Debug\net6.0\GrpcUnaryClient.exe
+D:\GRPC\ServerStreaming\GrpcUnaryClient\bin\Debug\net6.0\GrpcUnaryClient.deps.json
+D:\GRPC\ServerStreaming\GrpcUnaryClient\bin\Debug\net6.0\GrpcUnaryClient.runtimeconfig.json
+D:\GRPC\ServerStreaming\GrpcUnaryClient\bin\Debug\net6.0\GrpcUnaryClient.dll
+D:\GRPC\ServerStreaming\GrpcUnaryClient\bin\Debug\net6.0\GrpcUnaryClient.pdb
+D:\GRPC\ServerStreaming\GrpcUnaryClient\obj\Debug\net6.0\GrpcUnaryClient.GeneratedMSBuildEditorConfig.editorconfig
+D:\GRPC\ServerStreaming\GrpcUnaryClient\obj\Debug\net6.0\GrpcUnaryClient.AssemblyInfoInputs.cache
+D:\GRPC\ServerStreaming\GrpcUnaryClient\obj\Debug\net6.0\GrpcUnaryClient.AssemblyInfo.cs
+D:\GRPC\ServerStreaming\GrpcUnaryClient\obj\Debug\net6.0\GrpcUnaryClient.csproj.CoreCompileInputs.cache
+D:\GRPC\ServerStreaming\GrpcUnaryClient\obj\Debug\net6.0\GrpcUnaryClient.sourcelink.json
+D:\GRPC\ServerStreaming\GrpcUnaryClient\obj\Debug\net6.0\GrpcUnaryClient.dll
+D:\GRPC\ServerStreaming\GrpcUnaryClient\obj\Debug\net6.0\refint\GrpcUnaryClient.dll
+D:\GRPC\ServerStreaming\GrpcUnaryClient\obj\Debug\net6.0\GrpcUnaryClient.pdb
+D:\GRPC\ServerStreaming\GrpcUnaryClient\obj\Debug\net6.0\GrpcUnaryClient.genruntimeconfig.cache
+D:\GRPC\ServerStreaming\GrpcUnaryClient\obj\Debug\net6.0\ref\GrpcUnaryClient.dll

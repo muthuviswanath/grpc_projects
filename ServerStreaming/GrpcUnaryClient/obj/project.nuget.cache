@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "ShXDp1Ie1eTtLYNXPufADjXpDJhAd4sO9bkMfcf8A2omTjd5vH7GwyzPe3esvyjuyYXrhpaOPwUanxQpxzI5fg==",
+  "success": true,
+  "projectFilePath": "D:\\GRPC\\ServerStreaming\\GrpcUnaryClient\\GrpcUnaryClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\muthu\\.nuget\\packages\\grpc.core.api\\2.40.0\\grpc.core.api.2.40.0.nupkg.sha512",
+    "C:\\Users\\muthu\\.nuget\\packages\\grpc.net.client\\2.40.0\\grpc.net.client.2.40.0.nupkg.sha512",
+    "C:\\Users\\muthu\\.nuget\\packages\\grpc.net.common\\2.40.0\\grpc.net.common.2.40.0.nupkg.sha512",
+    "C:\\Users\\muthu\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.3\\microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\muthu\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}
