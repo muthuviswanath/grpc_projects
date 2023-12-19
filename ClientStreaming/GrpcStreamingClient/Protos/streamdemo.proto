@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServer";
+
+package streamdemo;
+
+service StreamDemo{
+rpc CientStreamingDemo(stream Test) returns (Test);
+}
+
+message Test{
+string TestMessage = 1;
+}

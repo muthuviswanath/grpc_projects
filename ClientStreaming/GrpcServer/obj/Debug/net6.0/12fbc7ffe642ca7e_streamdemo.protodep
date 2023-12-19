@@ -1,0 +1,2 @@
+obj\Debug\net6.0\Protos/Streamdemo.cs \
+obj\Debug\net6.0\Protos/StreamdemoGrpc.cs: Protos/streamdemo.proto
