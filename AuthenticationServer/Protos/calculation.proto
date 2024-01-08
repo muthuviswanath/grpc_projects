@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option csharp_namespace = "AuthenticationServer";
+
+package calculation;
+
+// The greeting service definition.
+service Calculation {
+  
+  rpc PerformAddition (InputNumbers) returns (CalculationResult);
+  rpc PerformSubtraction(InputNumbers) returns (CalculationResult);
+  rpc PerformMultiplication(InputNumbers) returns (CalculationResult);
+  rpc PerformDivision(InputNumbers) returns (CalculationResult);
+  rpc PerformModulus(InputNumbers) returns (CalculationResult);
+}
+
+
+message InputNumbers{
+	int32 Number1 = 1;
+	int32 Number2 = 2;
+	
+}
+
+message CalculationResult{
+	int32 result = 1;
+}

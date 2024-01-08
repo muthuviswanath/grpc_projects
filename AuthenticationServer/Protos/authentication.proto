@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "AuthenticationServer";
+
+package authentication;
+
+// The greeting service definition.
+service Authentication {
+  // Sends a greeting
+  rpc Authenticate (AuthenticationRequest) returns (AuthenticationResponse);
+}
+
+message AuthenticationRequest{
+	string UserName = 1;
+	string Password = 2;
+}
+
+message AuthenticationResponse{
+	string AccessToken = 1;
+	int32 ExpiresIn = 2;
+}

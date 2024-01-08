@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "S9Y4dNyGtMKXoKAKNn9OXOx9s+cVN+Qha0VUNQmdWfs=",
+  "Source": "GrpcBidirectionalServer",
+  "BasePath": "_content/GrpcBidirectionalServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcBidirectionalServer";
+
+package streamdemo;
+
+service StreamDemo{
+rpc BidirectionalStreamingDemo(stream MultipleTest) returns (stream MultipleTest);
+}
+
+message MultipleTest{
+	string TestMessage = 1;
+}
+
+

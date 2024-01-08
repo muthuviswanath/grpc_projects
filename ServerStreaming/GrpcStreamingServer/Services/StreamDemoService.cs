@@ -12,6 +12,15 @@ namespace GrpcStreamingServer.Services
                 await responseStream.WriteAsync(new Test { TestMessage = $"{request.TestMessage} {i}" });
                 await Task.Delay(1000);
             }
+
+            /*
+             Fetching information of products (Microservice - responsible to fetch product)
+             
+             Display the ongoing offers (DisplayOfferService)
+
+             
+             
+             */
         }
 
     }
