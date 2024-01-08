@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServiceApp2";
+
+package difference;
+
+// The greeting service definition.
+service Difference {
+  // Sends a greeting
+  rpc Difference (DifferenceRequest) returns (DifferenceResponse);
+}
+
+// The request message containing the user's name.
+message DifferenceRequest {
+ int32 number1 = 1;
+int32 number2 = 2;
+}
+
+// The response message containing the greetings.
+message DifferenceResponse {
+int32 Result = 1;
+}

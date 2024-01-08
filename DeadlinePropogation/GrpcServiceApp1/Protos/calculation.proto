@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServiceApp1";
+
+package calculation;
+
+// The greeting service definition.
+service Calculation {
+  // Sends a greeting
+  rpc Sum (CalcRequest) returns (CalcResponse);
+  rpc Difference (CalcRequest) returns (CalcResponse);
+}
+
+message CalcRequest{
+int32 number1 = 1;
+int32 number2 = 2;
+}
+
+message CalcResponse{
+int32 Result = 1;
+}

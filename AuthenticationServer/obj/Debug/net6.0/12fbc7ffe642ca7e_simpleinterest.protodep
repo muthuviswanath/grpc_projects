@@ -1,0 +1,2 @@
+obj\Debug\net6.0\Protos/Simpleinterest.cs \
+obj\Debug\net6.0\Protos/SimpleinterestGrpc.cs: Protos/simpleinterest.proto

@@ -10,7 +10,25 @@ namespace AuthenticationServer
         public const string JWT_TOKEN_KEY = "muthuviswanath@outlook.com";
         private const int JWT_TOKEN_VALIDITY = 25;
         public static AuthenticationResponse Authenticate(AuthenticationRequest authenticationRequest) {
-            if (authenticationRequest.UserName != "admin" || authenticationRequest.Password != "admin") {
+            var userRole = string.Empty;
+            if (authenticationRequest.UserName == "admin" && authenticationRequest.Password == "admin")
+            {
+                userRole = "Administrator";
+            }
+
+            else if (authenticationRequest.UserName == "user" || authenticationRequest.Password == "user")
+            {
+                userRole = "User";
+            }
+            else if (authenticationRequest.UserName == "testuser" || authenticationRequest.Password == "testuser")
+            {
+                userRole = "SuperUser";
+            }
+            else if (authenticationRequest.UserName == "" || authenticationRequest.Password == "")
+            {
+                
+            }
+            else {
                 return null;
             }
 
@@ -21,7 +39,7 @@ namespace AuthenticationServer
                 Subject = new System.Security.Claims.ClaimsIdentity(new List<Claim>
                 {
                     new Claim("username", authenticationRequest.UserName),
-                    new Claim(ClaimTypes.Role, "Administrator"),
+                    new Claim(ClaimTypes.Role, userRole),
 
                 }),
                 Expires = tokenExpiryDateTime,
