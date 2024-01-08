@@ -1,7 +1,9 @@
 ﻿using Grpc.Core;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AuthenticationServer.Services
 {
+    [Authorize]
     public class CalculationService: Calculation.CalculationBase
     {
         public override Task<CalculationResult> PerformAddition(InputNumbers request, ServerCallContext context)
