@@ -1,0 +1,4 @@
+obj\Debug\net5.0\Protos/Product.cs \
+obj\Debug\net5.0\Protos/ProductGrpc.cs: C:/Users/muthu/.nuget/packages/grpc.tools/2.34.0/build/native/include/google/protobuf/timestamp.proto\
+ C:/Users/muthu/.nuget/packages/grpc.tools/2.34.0/build/native/include/google/protobuf/empty.proto\
+ Protos/product.proto
