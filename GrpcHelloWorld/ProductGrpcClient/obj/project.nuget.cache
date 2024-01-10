@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gnzX/acpOJhBfcvdBNVZLU7MMs2h/yapGxNMoi8+2rLZFEvjLZK+yOs/bYO4VXa2EZwqNqB5mqOOq9r+LXSOSg==",
+  "dgSpecHash": "9uEY2ZVv7v37gAuV+s8m7RFX04/571QgOosdasjl8SCXCPDHUSn8GYpKSijK/8NoLkZgthCWI6FIvzn7J3T4Sw==",
   "success": true,
   "projectFilePath": "D:\\GRPC\\GrpcHelloWorld\\ProductGrpcClient\\ProductGrpcClient.csproj",
   "expectedPackageFiles": [
