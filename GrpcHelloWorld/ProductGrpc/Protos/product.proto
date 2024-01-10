@@ -41,7 +41,7 @@ message DeleteProductResponse{
 
 message InsertBulkProductResponse{
 	bool success = 1;
-	int32 insertCount = 2;
+	int32 InsertCount = 2;
 }
 
 message ProductModel{

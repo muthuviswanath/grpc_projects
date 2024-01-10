@@ -32,7 +32,7 @@ namespace ProductGrpc.Protos {
             "dBIeCgdwcm9kdWN0GAEgASgLMg0uUHJvZHVjdE1vZGVsIikKFERlbGV0ZVBy",
             "b2R1Y3RSZXF1ZXN0EhEKCXByb2R1Y3RJZBgBIAEoBSIoChVEZWxldGVQcm9k",
             "dWN0UmVzcG9uc2USDwoHc3VjY2VzcxgBIAEoCCJBChlJbnNlcnRCdWxrUHJv",
-            "ZHVjdFJlc3BvbnNlEg8KB3N1Y2Nlc3MYASABKAgSEwoLaW5zZXJ0Q291bnQY",
+            "ZHVjdFJlc3BvbnNlEg8KB3N1Y2Nlc3MYASABKAgSEwoLSW5zZXJ0Q291bnQY",
             "AiABKAUipAEKDFByb2R1Y3RNb2RlbBIRCglQcm9kdWN0SWQYASABKAUSDAoE",
             "TmFtZRgCIAEoCRITCgtEZXNjcmlwdGlvbhgDIAEoCRINCgVQcmljZRgEIAEo",
             "AhIeCgZzdGF0dXMYBSABKA4yDi5Qcm9kdWN0U3RhdHVzEi8KC2NyZWF0ZWRU",
@@ -1138,7 +1138,7 @@ namespace ProductGrpc.Protos {
       }
     }
 
-    /// <summary>Field number for the "insertCount" field.</summary>
+    /// <summary>Field number for the "InsertCount" field.</summary>
     public const int InsertCountFieldNumber = 2;
     private int insertCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
