@@ -7,17 +7,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductGrpc", "ProductGrpc\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductGrpcClient", "ProductGrpcClient\ProductGrpcClient.csproj", "{A55D5E50-A96B-408F-B040-68175DAB3E04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductWorkerService", "ProductWorkerService\ProductWorkerService.csproj", "{01303D13-763F-4F9F-9514-0BF436C77C80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductWorkerService", "ProductWorkerService\ProductWorkerService.csproj", "{01303D13-763F-4F9F-9514-0BF436C77C80}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{B16D2352-22AD-4478-B904-AF11922C074A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountGrpc", "DiscountGrpc\DiscountGrpc.csproj", "{7826C5A3-2A6B-45A4-9999-2544041EC393}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiscountGrpc", "DiscountGrpc\DiscountGrpc.csproj", "{7826C5A3-2A6B-45A4-9999-2544041EC393}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{D3DB6CD0-005B-4E4F-9C27-03B415E92C28}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ShoppingCart", "ShoppingCart", "{D64E1F3F-C633-4A2C-9762-8351931B4312}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCartGrpc", "ShoppingCartGrpc\ShoppingCartGrpc.csproj", "{9DB5BF3C-1188-471E-BF81-2ECA9078D8D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartGrpc", "ShoppingCartGrpc\ShoppingCartGrpc.csproj", "{9DB5BF3C-1188-471E-BF81-2ECA9078D8D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCartWorkerService", "ShoppingCartWorkerService\ShoppingCartWorkerService.csproj", "{41CAB24F-09FE-44EE-9B7D-3DB9150550A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{B4CFE0BB-5A6A-4E41-ACC8-E087BE8BC66E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{2C4DE43E-E3DF-4DEB-BB5A-BC55D9B9274A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,14 @@ Global
 		{9DB5BF3C-1188-471E-BF81-2ECA9078D8D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DB5BF3C-1188-471E-BF81-2ECA9078D8D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DB5BF3C-1188-471E-BF81-2ECA9078D8D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41CAB24F-09FE-44EE-9B7D-3DB9150550A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41CAB24F-09FE-44EE-9B7D-3DB9150550A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41CAB24F-09FE-44EE-9B7D-3DB9150550A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41CAB24F-09FE-44EE-9B7D-3DB9150550A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C4DE43E-E3DF-4DEB-BB5A-BC55D9B9274A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4DE43E-E3DF-4DEB-BB5A-BC55D9B9274A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4DE43E-E3DF-4DEB-BB5A-BC55D9B9274A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4DE43E-E3DF-4DEB-BB5A-BC55D9B9274A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +69,8 @@ Global
 		{01303D13-763F-4F9F-9514-0BF436C77C80} = {D3DB6CD0-005B-4E4F-9C27-03B415E92C28}
 		{7826C5A3-2A6B-45A4-9999-2544041EC393} = {B16D2352-22AD-4478-B904-AF11922C074A}
 		{9DB5BF3C-1188-471E-BF81-2ECA9078D8D4} = {D64E1F3F-C633-4A2C-9762-8351931B4312}
+		{41CAB24F-09FE-44EE-9B7D-3DB9150550A4} = {D64E1F3F-C633-4A2C-9762-8351931B4312}
+		{2C4DE43E-E3DF-4DEB-BB5A-BC55D9B9274A} = {B4CFE0BB-5A6A-4E41-ACC8-E087BE8BC66E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2812E136-B19F-4320-A6E0-0CD626875651}

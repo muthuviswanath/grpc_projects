@@ -4,8 +4,8 @@ option csharp_namespace = "ShoppingCartGrpc.Protos";
 
 service ShoppingCartProtoService{
 
-rpc GetShoppingCart(GetShoppingCartRequest)returns(ShoppingCartMode);
-rpc CreateShoppingCart(ShoppingCartMode)returns(ShoppingCartMode);
+rpc GetShoppingCart(GetShoppingCartRequest)returns(ShoppingCartModel);
+rpc CreateShoppingCart(ShoppingCartModel)returns(ShoppingCartModel);
 rpc AddItemsIntoShoppingCart(stream AddItemsIntoShoppingCartRequest)returns(AddItemsIntoShoppingCartResponse);
 rpc RemoveItemsFromShoppingCart(RemoveItemsFromShoppingCartRequest)returns(RemoveItemsFromShoppingCartResponse);
 }
@@ -14,7 +14,7 @@ message GetShoppingCartRequest{
 string username =1;
 }
 
-message ShoppingCartMode{
+message ShoppingCartModel{
 string username = 1;
 repeated ShoppingCartItemModel cartItems = 2;
 }

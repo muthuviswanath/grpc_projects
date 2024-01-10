@@ -1,0 +1,2 @@
+obj\Debug\net5.0/Shoppingcart.cs \
+obj\Debug\net5.0/ShoppingcartGrpc.cs: ../ShoppingCartGrpc/Protos/shoppingcart.proto
